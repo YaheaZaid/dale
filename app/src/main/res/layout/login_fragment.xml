@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="293dp"
+        android:layout_height="156dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@mipmap/logo_foreground" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_gravity="center"
+        android:textSize="10dp"
+
+        android:id="@+id/mobilenum"
+        style="@style/inputstyle"
+        android:drawableStart="@drawable/mobilnum_icon"
+        android:ems="10"
+        android:drawableTint="@color/white"
+        android:drawablePadding="3dp"
+        android:layout_margin="16dp"
+        android:inputType="number"
+        android:hint="Mobil" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        style="@style/inputstyle"
+        android:textSize="10dp"
+android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:drawableTint="@color/white"
+        android:drawableStart="@drawable/pass_icon"
+        android:drawablePadding="3dp"
+android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Passord" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="@style/textcolor"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:textSize="8dp"
+            android:text="Glemt passordet ?" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbtn"
+        android:textSize="16dp"
+        android:layout_width="280dp"
+        android:layout_height="47dp"
+        app:cornerRadius="5dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        style="@style/btn"
+        android:ems="10"
+
+        android:text="LOGG INN" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ikke bonus kunde enda?"
+        style="@style/textcolor"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eller"
+        android:layout_marginTop="16dp"
+        style="@style/textcolor"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <View
+            android:layout_width="140dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/inputbackround" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="140dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            android:background="@color/inputbackround" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textcolor"
+        android:text="Registrer deg med sosiale nettverk" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/face" />
+
+        <ImageView
+            android:id="@+id/img_twiter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/twirer" />
+
+        <ImageView
+            android:id="@+id/img_goole"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ddddddddddd" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
